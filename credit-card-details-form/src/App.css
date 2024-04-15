@@ -4,6 +4,8 @@
   box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
 }
+
+/*VISUAL CARDS*/
 .cards{
   background:url("./assets/images/bg-main-mobile.png");
   background-repeat: no-repeat;
@@ -12,26 +14,29 @@
   overflow: visible;
   width: 100%;
   height: 290px;
-  border: solid;
 }
 
 .cardFront, .cardBack {
   position: absolute;
   background-repeat: no-repeat;
   overflow: hidden;
-  width: 447px;
-  height: 245px;
+  width: 80%;
+  height: 80%;
+  max-width: 447px;
+  max-height: 245px;
 
 }
 
 .cardBack{
   background: url("./assets/images/bg-card-back.png");
   right: 0.3%;
+  background-size: 100% 100%;
 }
 
 .cardFront{
   background: url("./assets/images/bg-card-front.png");
   top:49%;
+  background-size: 100% 100%;
   
 }
 
@@ -45,9 +50,38 @@ position: absolute;
   top:9%;
   left:6%;
 }
+
+.visualcvc, .visualNumber, .visualName, .visualExpDate{
+    position: absolute;
+    color: white;
+}
+
+.visualcvc{
+  top:46%;
+  right: 14%;
+}
+
+.visualNumber{
+  width: 100%;
+  text-align: center;
+  top:50%;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+
+.visualName{
+top:70%;
+left:7%;
+}
+
+.visualExpDate{
+  top:70%;
+  right: 7%;
+}
+
+/*FORM*/
 .cardForm{
   margin-top:100px;
-  border: solid;
   padding: 2rem;
   display: flex;
   flex-direction: column;

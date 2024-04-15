@@ -8,10 +8,12 @@ function App() {
     <>
       <div className="cards">
         <div className='cardBack'>
-
+            <span className='visualcvc'>000</span>
         </div>
         <div className='cardFront'>
-
+            <strong className='visualNumber'>0000 0000 0000 0000</strong>
+            <span className='visualName'>JANE APPLESEED</span>
+            <span className='visualExpDate'>00/00</span>
         </div>
       </div>
       <form method='POST' className='cardForm'>
