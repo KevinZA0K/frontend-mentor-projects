@@ -1,0 +1,33 @@
+.countriesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,340px);
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+}
+
+.countriesList li{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    border:gray solid 0.5px;
+    overflow: hidden;
+    border-radius: 8px;
+    padding-bottom: 3rem;
+    cursor: pointer;
+    background-color: var(--elements-background);
+
+}
+
+.countriesList li img{
+    width: 100%;
+    height: 210px;
+}
+
+.countryText{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    gap:0.5rem;
+}

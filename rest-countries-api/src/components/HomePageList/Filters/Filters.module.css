@@ -1,0 +1,31 @@
+.filters{
+    width: 100%;
+    margin-top:1.3rem;
+    margin-bottom: 1.3rem;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:4rem;
+}
+
+.searchCountry {
+    flex-grow: 1;
+    flex-basis: 400px;
+    padding: 1rem;
+    height: 50px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.filterRegion {
+    flex-grow:0.5;
+    height: 50px;
+    border-radius: 5px;
+    border:none;
+    outline: none;
+}
+
+option{
+padding: 5rem;
+}

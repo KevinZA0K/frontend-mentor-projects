@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family:sans-serif;
+}
+
+body{
+  background-color: var(--body-background);
+}
+
+a,h1,h2,h3,h4,h5,h6,p,span,button,select,input{
+  color:var(--text);
+  background-color: var(--elements-background);
+}
+
+.container{
+  width: 90%;
+  margin: 0 auto;
+  height: auto;
+}
+
+@media screen and (prefers-color-scheme:dark) {
+  :root{
+    --body-background:hsl(207,26%,17%);
+    --elements-background:hsl(209,23%,22%);
+    --text:hsl(0,0%,100%);
+  }
+}
+
+@media screen and (prefers-color-scheme:light) {
+  :root{
+    --body-background:hsl(0,0%,98%);
+    --elements-background:hsl(0,0%,100%);
+    --text:hsl(200,15%,8%)
+  }
+}
