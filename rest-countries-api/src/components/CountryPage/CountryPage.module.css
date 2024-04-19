@@ -1,0 +1,28 @@
+.backButton{
+    margin:2rem 0;
+    padding: 1rem 3rem;
+    border:none;
+    border-radius: 4px;
+}
+
+.countryDetails{
+    margin-top:1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: start;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--elements-background);
+    padding: 1rem;
+    width: auto;
+}
+
+
+.detailsTable{
+    margin-top:4rem;
+    padding-left: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    font-size: 1.2rem;
+}

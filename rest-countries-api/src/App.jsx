@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import NavBar from './components/NavBar/NavBar'
 import "./App.css"
 import HomePageList from './components/HomePageList/HomePageList'
+import CountryPage from './components/CountryPage/CountryPage'
 
 function App() {
 
@@ -14,7 +15,8 @@ function App() {
         <div className='container'>
           <Routes>
             <Route path="/" element={<HomePageList />} />
-            <Route path="/:countryId" element={<h1>ola</h1>}/>
+            <Route path="/country/:countryId" element={<CountryPage />}/>
+            <Route path="*" element={<h1>Error 404 NOT FOUND</h1>}/>
           </Routes>
         </div>
       </BrowserRouter>

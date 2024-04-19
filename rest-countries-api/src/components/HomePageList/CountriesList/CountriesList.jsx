@@ -1,34 +1,15 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import Country from "./Country/Country";
 import styles from "./CountriesList.module.css"
 import { FilterContext } from "../../../context/FilterContext";
+import { ApiContext } from "../../../context/ApiContext";
 
 export default function CountriesList() {
 
-  const [countries, setCountries] = useState([]);
-  const {filter,setFilter} = useContext(FilterContext)
+  const {api} = useContext(ApiContext)
 
+  const {filter} = useContext(FilterContext)
 
-  useEffect(() => {
-    fetch("https://restcountries.com/v3.1/all")
-      .then((response) => response.json())
-      .then((json) => setCountries(json));
-    {
-      console.log(countries);
-    }
-  }, []);
-
-  // function filterSearch(countries,filter){
-  //   if(filter.region === 'all' || filter.text === ""){
-  //     console.log("all seleccionado")
-  //     return countries
-  //   }
-    
-  //   return countries.filter(country=>{
-  //     return (country.region === filter.region || country.name.common === filter.text)
-  //   }
-  //   )
-  // }
 
   function filterSearch(countries, filter){
     let filteredCountries = countries;
@@ -48,7 +29,7 @@ export default function CountriesList() {
 
   console.log(filter)
 
-  let filteredCountries = filterSearch(countries,filter)
+  let filteredCountries = filterSearch(api,filter)
 
   return (
     <ul className={styles.countriesList}>

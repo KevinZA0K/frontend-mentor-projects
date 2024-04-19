@@ -13,7 +13,7 @@ export default function Country({
     const nav = useNavigate()
 
   return (
-    <li key={id} onClick={() => nav(`/${id}`)}>
+    <li key={id} onClick={() => nav(`/country/${id}`)}>
       <img src={flag} />
       <div className={styles.countryText}>
         <h1>{countryName}</h1>

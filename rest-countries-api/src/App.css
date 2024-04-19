@@ -11,10 +11,18 @@ body{
   background-color: var(--body-background);
 }
 
-a,h1,h2,h3,h4,h5,h6,p,span,button,select,input{
+a,h1,h2,h3,h4,h5,h6,p,section,span,button,select,input{
   color:var(--text);
+}
+
+button,select,input{
   background-color: var(--elements-background);
 }
+
+div{
+  color:var(--text)
+}
+
 
 .container{
   width: 90%;
