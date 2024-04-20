@@ -1,0 +1,44 @@
+.mainContent{
+    background-color: rgb(68, 68, 238);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    gap:2rem;
+    position: relative;
+}
+
+.mainTitle{
+    color:white;
+}
+
+.details{
+    position: absolute;
+    border:solid;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: white;
+    top:80%;
+
+}
+
+.details div{
+    flex:1 0 200px;
+    padding:1rem;
+}
+
+.details div h5{
+    color:rgb(167, 161, 161);
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.details div p{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
