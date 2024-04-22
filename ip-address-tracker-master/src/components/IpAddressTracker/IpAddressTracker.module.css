@@ -1,3 +1,12 @@
+.error{
+    color: white;
+    background-color: red;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 9px;
+}
+
 .mainContent{
     background:url("../../assets/pattern-bg-desktop.png");
     background-size: cover;
@@ -25,6 +34,7 @@
     text-align: center;
     background-color: white;
     top:85%;
+    z-index: 1;
 
 }
 
